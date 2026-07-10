@@ -432,7 +432,6 @@ tests:
       TEST_PROFILE: "null"
     test:
     - ref: rosa-tests
-    - ref: rosa-tests-report
 - as: rosa-day1-negative-f7
   cron: 21 12 6,13,20,29 * *
   reporter_config:
@@ -452,7 +451,6 @@ tests:
       TEST_PROFILE: "null"
     test:
     - ref: rosa-tests
-    - ref: rosa-tests-report
 - as: rosa-day1-supplemental-f3
   cron: 15 23 3,6,9,12,15,18,21,24,27,30 * *
   reporter_config:
@@ -472,7 +470,6 @@ tests:
       TEST_PROFILE: "null"
     test:
     - ref: rosa-tests
-    - ref: rosa-tests-report
 - as: rosa-sts-upgrade-z-stream-f3
   cron: 32 18 3,6,9,12,15,18,21,24,27,30 * *
   reporter_config:
@@ -494,7 +491,6 @@ tests:
       TEST_PROFILE: rosa-upgrade-z-stream
     test:
     - ref: rosa-tests
-    - ref: rosa-tests-report
     workflow: rosa-lifecycle
 - as: rosa-non-sts-upgrade-y-stream-f7
   cron: 21 12 6,13,20,29 * *
@@ -517,7 +513,6 @@ tests:
       TEST_PROFILE: rosa-non-sts-upgrade-y-stream
     test:
     - ref: rosa-tests
-    - ref: rosa-tests-report
     workflow: rosa-lifecycle
 - as: rosa-sts-shared-vpc-upgrade-y-stream-f3
   cron: 0 0 1,4,7,10,13,16,19,22,25,28 * *
@@ -541,7 +536,6 @@ tests:
       VERSION: y-1
     test:
     - ref: rosa-tests
-    - ref: rosa-tests-report
     workflow: rosa-lifecycle
 - as: rosa-sts-upgrade-y-stream-f3
   cron: 26 16 2,5,8,11,14,17,20,23,26,29 * *
@@ -564,7 +558,6 @@ tests:
       TEST_PROFILE: rosa-upgrade-y-stream
     test:
     - ref: rosa-tests
-    - ref: rosa-tests-report
     workflow: rosa-lifecycle
 - as: rosa-sts-upgrade-y-stream-prod-f3
   cron: 16 8 1,4,7,10,13,16,19,22,25,28 * *
@@ -588,7 +581,6 @@ tests:
       TEST_PROFILE: rosa-upgrade-y-stream
     test:
     - ref: rosa-tests
-    - ref: rosa-tests-report
     workflow: rosa-lifecycle
 - as: rosa-hcp-upgrade-z-stream-f3
   cron: 53 12 3,6,9,12,15,18,21,24,27,30 * *
@@ -610,7 +602,6 @@ tests:
       TEST_PROFILE: rosa-hcp-upgrade-z-stream
     test:
     - ref: rosa-tests
-    - ref: rosa-tests-report
     workflow: rosa-lifecycle
 - as: rosa-hcp-upgrade-y-stream-f3
   cron: 42 1 1,4,7,10,13,16,19,22,25,28 * *
@@ -632,7 +623,6 @@ tests:
       TEST_PROFILE: rosa-hcp-upgrade-y-stream
     test:
     - ref: rosa-tests
-    - ref: rosa-tests-report
     workflow: rosa-lifecycle
 - as: rosa-sts-hibernation-f14
   cron: 3 18 13,29 * *
@@ -655,7 +645,6 @@ tests:
       TEST_PROFILE: rosa-advanced
     test:
     - ref: rosa-tests
-    - ref: rosa-tests-report
     workflow: rosa-lifecycle
 zz_generated_metadata:
   branch: master
